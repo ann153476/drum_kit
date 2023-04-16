@@ -12,7 +12,6 @@ body {
   justify-content: center;
 }
 .box {
-  border: 3px solid red;
   width: 300px;
   height: 600px;
   display: flex;
@@ -20,8 +19,83 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.box > div {
-  border: 1px solid green;
+.box > button {
+  border: 1px solid white;
   width: 95px;
   height: 95px;
+  position: relative;
+}
+.box > button:hover {
+  filter: hue-rotate(90deg);
+  transition: all 1s;
+}
+.box > button span {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(0);
+  filter: blur(10px);
+  background-color: #ffffffc0;
+  transition: all 0.5s;
+}
+.box > button:hover span {
+  opacity: 1;
+  transform: scale(70%);
+}
+#btn1 {
+  background-color: rgb(255, 84, 84);
+}
+#btn2 {
+  background-color: rgb(255, 136, 85);
+}
+#btn3 {
+  background-color: #ffb650;
+}
+#btn4 {
+  background-color: rgb(255, 231, 76);
+}
+#btn5 {
+  background-color: rgb(234, 255, 76);
+}
+#btn6 {
+  background-color: rgb(198, 255, 85);
+}
+#btn7 {
+  background-color: rgb(153, 255, 85);
+}
+#btn8 {
+  background-color: rgb(81, 255, 174);
+}
+#btn9 {
+  background-color: rgb(84, 255, 218);
+}
+#btn10 {
+  background-color: rgb(96, 255, 252);
+}
+#btn11 {
+  background-color: rgb(76, 216, 255);
+}
+#btn12 {
+  background-color: rgb(75, 177, 255);
+}
+#btn13 {
+  background-color: rgb(72, 84, 255);
+}
+#btn14 {
+  background-color: rgb(126, 66, 255);
+}
+#btn15 {
+  background-color: rgb(115, 0, 255);
+}
+#btn16 {
+  background-color: rgb(170, 0, 255);
+}
+#btn17 {
+  background-color: rgb(225, 0, 255);
+}
+#btn18 {
+  background-color: rgb(255, 0, 234);
 }
